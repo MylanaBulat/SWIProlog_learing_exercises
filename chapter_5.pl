@@ -22,3 +22,12 @@ accMax([H|T], A, Max):-
 accMax([], A, A).
 
 maxNum(List, Max):- List = [H|T], accMax(List, H, Max).
+
+% Exersice
+increments(A, B):- B is A+1.
+sum(A, B, C):- C is A+B.
+
+addone([], []).
+addone([H1|T1], [H2|T2]) :- 
+    H2 is H1+1, 
+    addone(T1, T2).
